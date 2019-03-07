@@ -50,10 +50,10 @@ spec:
         volumeMounts:
         - name: conf
           mountPath: /conf 
-          readonly: false 
+          readOnly: false
         - name:  data
           mountPath: /data 
-          readonly: false 
+          readOnly: false
       volumes:
       - name: conf 
         configMap:
