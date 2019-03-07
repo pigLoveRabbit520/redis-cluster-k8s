@@ -19,7 +19,7 @@ data:
     protected-mode no
 ---
 apiVersion: apps/v1
-kind: StatefulSet 
+kind: StatefulSet
 metadata:
   name: redis-cluster 
 spec:
@@ -41,7 +41,7 @@ spec:
             name: client 
           - containerPort: 16379 
             name: gossip
-        command: ["/conf/update-node.sh", "redis-server", ,"/conf/redis.conf"]
+        command: ["/conf/update-node.sh", "redis-server", "/conf/redis.conf"]
         env:
         - name:  POO_IP 
           valueFrom:
