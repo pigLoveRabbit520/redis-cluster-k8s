@@ -23,7 +23,7 @@ kind: StatefulSet
 metadata:
   name: redis-cluster 
 spec:
-  serviceName: redis-cluster
+  serviceName: redis-cluster-service
   replicas: 6 
   selector: 
     matchLabels:
